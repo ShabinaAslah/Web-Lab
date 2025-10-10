@@ -1,0 +1,53 @@
+ <html>
+ <head>
+ <title>
+ Registration Form
+ </title>
+<style>
+body{
+	background-color: lightgrey;
+	padding: 20px;
+  display: block;
+  margin-bottom: 8px; /* Space between label and input */
+}
+</style>
+ </head>
+ <body>
+ <h1><center>REGISTRATION FORM</center></h1>
+<form >
+ <fieldset>
+    <legend>User Information:</legend><br>
+<table>
+ <tr><td>Name</td><td><select name=opt id=opt required>
+ <option value=mr>Mr</option>
+ <option value=mrs>Mrs</option>
+ <option value=ms>Ms</option></select>
+ <input type="text"  name="nm"  id="nm" required></td></tr>
+ <tr><td>Phone</td>
+ <td>Email</td></tr>
+ <tr><td><input type="text" name="phn"  id="phn" required></td>
+ <td><input type="email" name="mail" id="mail" required></td></tr> 
+ </table>
+ </fieldset>
+ <table>
+ <tr><td>Address</td><td><textarea width="5px"  required></textarea></td></tr>
+ <tr><td>Gender</td><td><input type="radio"  name=gender value=male required>MALE
+ <input type="radio"  name=gender value=female required>FEMALE
+ <input type="radio"  name=gender value=othr required>OTHER</tr></td>
+ <tr><td>Language Known</td><td><input type="checkbox"  name="eng" id="eng"  value="English" required>English
+ <input type="checkbox"  name="mal id="mal"  value="Malayalam" required>Malayalam
+ <input type="checkbox"  name="hin" id="hin"  value="Hindi" required>Hindi</tr></td>
+ <tr><td>Course</td><td><select name=course id=cus required>
+ <option value=slct>SELECT</option>
+ <option value=mca>MCA</option>
+ <option value=mba>MBA</option>
+ <option value=msw>MSW</option>
+ <option value=mtech>M.TECH</option>
+ <option value=mbbs>MBBS</option>
+ </select></tr></td>
+ </table>
+ <center><input type=button  value=RESET name=rst id=rst>
+<input type=button  value=SUBMIT name=sub id=sub></center>
+ </form>
+ </body>
+ </html>
