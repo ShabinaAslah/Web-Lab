@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>
+			Event Handling
+		</title>
+		<style>
+			body
+			{
+				text-align:center;
+				margin-top:150px;
+			}
+			button{
+				width:150px;
+				height:50px;
+			}
+		</style>
+	</head>
+	<body>
+		To change the background color<br><button onclick="background()">Click me</button>
+		<script>
+			function background()
+			{
+				var  r=Math.floor(Math.random()*256);
+				var g=Math.floor(Math.random()*256);
+				var b=Math.floor(Math.random()*256);
+				document.body.style.background = "rgb(" + r + "," + g + "," + b + ")";
+			}
+		</script>
+	</body>
+</html>
